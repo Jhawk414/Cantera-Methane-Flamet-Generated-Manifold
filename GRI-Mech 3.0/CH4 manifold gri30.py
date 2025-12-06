@@ -1,5 +1,5 @@
 "Course: AE 774 Combustion - Spring 2025"
-"Author: Ryan Medlin"
+"Author: "
 print("This code develops a Methane-Air flamelet-generated manifold (FGM) using the GRI-Mech 3.0 Chemical Reaction Mechanism. Please ensure you have read the included user-guide.\n")
 
 #==== Import packages =====
@@ -229,3 +229,4 @@ print("\nThe following is a table of the filtered mass fractions.\n\nSpecies  | 
 for k in spec_list:
     Y_filtered_hold['Y_'+str(k)+'_filt'] = Y_unfiltered_hold['Y_'+str(k)+'_unfiltered']*bPDF_norm
     print(f"{k}     {Y_filtered_hold['Y_'+str(k)+'_filt']:.4E}")
+
